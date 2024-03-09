@@ -30,7 +30,7 @@
 }
 
 .button-dark {
-  @apply bg-black hover:bg-dark;
+  @apply bg-white dark:bg-black text-black dark:text-white hover:bg-light dark:hover:bg-dark transition-colors duration-300;
 }
 
 /* CHECKBOX */

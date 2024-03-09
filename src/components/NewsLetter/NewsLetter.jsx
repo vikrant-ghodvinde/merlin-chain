@@ -8,7 +8,7 @@ const NewsLetter = () => {
         <div className="relative p-16 max-md:p-5 rounded-3xl bg-primary-gradient">
           <div className="grid grid-cols-12 items-center">
             <div className="relative col-span-6 max-lg:col-span-12 max-lg:text-center p-3 max-lg:px-0 max-lg:py-3">
-              <h5 className="text-2xl">
+              <h5 className="text-2xl text-white">
                 Sign up to our newsletter and get the latest news and updates.
               </h5>
             </div>
