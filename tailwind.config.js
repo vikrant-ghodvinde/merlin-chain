@@ -12,7 +12,18 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundColor: {
+        dark: "#161616",
+        "heavy-dark": "#101010",
+      },
+      colors: {
+        "semi-dark": "#656565",
+        dark: "#161616",
+      },
+      fontFamily: {
+        "bebas-neue": ["Bebas Neue", "sans-serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };

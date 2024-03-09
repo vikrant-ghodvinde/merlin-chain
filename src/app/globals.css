@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+}
+
+.banner {
+  @apply relative bg-[url('/images/bgimg11.png')] bg-cover before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-80;
+}
+.banner::before {
+  box-shadow: inset 50px 50px 50px rgba(0, 0, 0, 1),
+    inset -50px -50px 50px rgba(0, 0, 0, 1);
+}
+
+.button {
+  @apply relative inline-flex items-center justify-center gap-1 py-3 px-6 text-sm rounded-3xl text-white transition-all duration-300;
+}
+
+.button-primary {
+  @apply bg-purple-600 hover:bg-purple-700;
+}
+
+.button-dark {
+  @apply bg-black hover:bg-dark;
+}
+
+/* CHECKBOX */
+.custom-checkbox {
+  border-color: #fff;
+}
+.custom-checkbox:checked {
+  background-image: linear-gradient(-45deg, transparent 65%, #fff 65.99%),
+    linear-gradient(45deg, transparent 75%, #fff 75.99%),
+    linear-gradient(-45deg, #fff 40%, transparent 40.99%),
+    linear-gradient(
+      45deg,
+      #fff 30%,
+      #9333ea 30.99%,
+      #9333ea 40%,
+      transparent 40.99%
+    ),
+    linear-gradient(-45deg, #9333ea 50%, #fff 50.99%);
+}
+
+.tabs-bordered > .tab {
+  @apply text-semi-dark border-dark transition-all duration-300 whitespace-nowrap max-sm:px-1;
+}
+.tab.tab-active:not(.tab-disabled):not([disabled]),
+.tab:is(input:checked) {
+  @apply text-white border-white;
+}
