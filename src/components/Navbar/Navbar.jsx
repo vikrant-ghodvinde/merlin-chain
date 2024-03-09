@@ -56,7 +56,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   className={`block hover:text-purple-500 ${
-                    pathname === "/" ? "text-purple-600" : "text-white"
+                    pathname === "/" ? "text-purple-600" : "text-black dark:text-white"
                   } transition-all duration-300`}
                 >
                   Home
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <Link
                   href="/projects"
                   className={`block hover:text-purple-500 ${
-                    pathname === "/projects" || pathname === "/project/id" ? "text-purple-600" : "text-white"
+                    pathname === "/projects" || pathname === "/project/id" ? "text-purple-600" : "text-black dark:text-white"
                   } transition-all duration-300`}
                 >
                   Projects
@@ -75,7 +75,7 @@ const Navbar = () => {
               <li className="block">
                 <Link
                   href="/"
-                  className="block text-white hover:text-purple-500 transition-all duration-300"
+                  className="block text-black dark:text-white hover:text-purple-500 transition-all duration-300"
                 >
                   Docs
                 </Link>
@@ -83,17 +83,17 @@ const Navbar = () => {
               <li className="block">
                 <Link
                   href="/"
-                  className="block text-white hover:text-purple-500 transition-all duration-300"
+                  className="block text-black dark:text-white hover:text-purple-500 transition-all duration-300"
                 >
                   Blogs
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="relative flex items-center gap-5">
+          <div className="relative flex items-center gap-2">
             <button
               type="button"
-              className="relative hidden max-lg:inline-flex items-center gap-1 py-3 px-6 text-sm rounded-3xl text-white bg-purple-600 hover:bg-purple-700 transition-all duration-300"
+              className="relative hidden max-lg:inline-flex items-center gap-1 py-3 px-6 text-sm rounded-3xl bg-primary-gradient text-white z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:rounded-3xl before:bg-black before:opacity-0 hover:before:opacity-30 before:transition-all before:duration-300 before:-z-10"
               onClick={() => setMenuToggle(!menuToggle)}
             >
               <MenuScale />

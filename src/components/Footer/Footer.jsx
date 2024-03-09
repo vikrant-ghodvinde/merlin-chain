@@ -3,12 +3,13 @@ import Container from "../Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { Telegram, X } from "iconoir-react";
+import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 const Footer = () => {
   return (
     <footer className="relative py-14">
       <Container>
-        <div className="relative bg-dark rounded-3xl p-10 max-sm:p-5">
+        <div className="relative bg-light dark:bg-dark rounded-3xl p-10 max-sm:p-5 transition-colors duration-300">
           <Image
             src="/images/logo.png"
             alt=""
@@ -57,7 +58,12 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <p className="text-sm">© {new Date().getFullYear()} Merlin</p>
+            <div className="flex items-center flex-wrap gap-2">
+              <ThemeToggler />
+              <p className="text-sm">
+                &copy; {new Date().getFullYear()} MerlinPad
+              </p>
+            </div>
           </div>
         </div>
       </Container>

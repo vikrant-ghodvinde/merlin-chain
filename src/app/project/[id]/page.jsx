@@ -26,7 +26,7 @@ const Project = () => {
           <div className="grid grid-cols-12 gap-5 max-lg:gap-x-0 max-lg:gap-y-5">
             <div className="relative col-span-12">
               <div className="flex gap-4">
-                <div className="relative w-16 min-w-16 h-16 max-lg:w-12 max-lg:min-w-12 max-lg:h-12 rounded-full bg-dark overflow-hidden">
+                <div className="relative w-16 min-w-16 h-16 max-lg:w-12 max-lg:min-w-12 max-lg:h-12 rounded-full bg-light dark:bg-dark overflow-hidden transition-colors duration-300">
                   <Image
                     src="/images/10n8-banner.png"
                     alt=""
@@ -49,7 +49,7 @@ const Project = () => {
               </div>
             </div>
             <div className="relative col-span-8 max-lg:col-span-12">
-              <div className="relative w-full min-w-72 h-full p-5 bg-dark rounded-3xl overflow-hidden">
+              <div className="relative w-full min-w-72 h-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                 <Image
                   src="/images/10n8-banner.png"
                   alt=""
@@ -60,7 +60,7 @@ const Project = () => {
               </div>
             </div>
             <div className="relative col-span-4 max-lg:col-span-12">
-              <div className="relative w-full p-5 bg-dark rounded-3xl overflow-hidden">
+              <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                 <div className="relative">
                   <h4 className="text-lg font-bold font-bebas-neue tracking-wide">
                     ELXR - PUBLIC SALE
@@ -75,10 +75,8 @@ const Project = () => {
                     <p className="text-sm font-bebas-neue">Progress</p>
                     <p className="text-sm font-bebas-neue">0.00%</p>
                   </div>
-                  <div className="relative w-full h-1 bg-black overflow-hidden rounded-xl">
-                    <div
-                      className={`absolute w-[${progress}%] h-full bg-purple-600`}
-                    ></div>
+                  <div className="relative w-full h-1 bg-white dark:bg-black overflow-hidden rounded-xl transition-colors duration-300">
+                    <div className="absolute h-full bg-primary-gradient transition-all duration-300" style={{width: `${progress}%`}}></div>
                   </div>
                 </div>
                 <ul className="flex flex-col gap-y-2 my-4">
@@ -133,7 +131,7 @@ const Project = () => {
                   </a>
                 </div>
                 {tabType === "about" ? (
-                  <div className="relative w-full p-5 bg-dark rounded-3xl overflow-hidden">
+                  <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                     <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
                       About Project
                     </h4>
@@ -172,7 +170,7 @@ const Project = () => {
                     </div>
                   </div>
                 ) : tabType === "roadMap" ? (
-                  <div className="relative w-full p-5 bg-dark rounded-3xl overflow-hidden">
+                  <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                     <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
                       Roadmap: Future of the Project
                     </h4>
@@ -182,11 +180,11 @@ const Project = () => {
                       </h3>
                       <p className="mb-3">
                         Due to The Council Ecosystem’s spiral value mechanics,
-                        the value to Builders of launching through ToshiPad will
-                        continue to increase. As the market cap of TSHX
+                        the value to Builders of launching through Merlin Pad
+                        will continue to increase. As the market cap of TSHX
                         increases, so does the incentive to launch through
-                        ToshiPad. This creates a continuously expanding market
-                        advantage for ToshiPad. In addition, we offer full
+                        Merlin Pad. This creates a continuously expanding market
+                        advantage for Merlin Pad. In addition, we offer full
                         service incubation including strategy, marketing,
                         connectivity, legal, and funding, as well as a full
                         ecosystem of waiting users. We anticipate accumulating a
@@ -198,7 +196,7 @@ const Project = () => {
                         infrastructure to the Ordinals space.
                       </p>
                       <Image
-                        src="/images/Toshipad-Road-Map.png"
+                        src="/images/Toshipad-Tokenomics.png"
                         alt=""
                         width={500}
                         height={500}
@@ -207,7 +205,7 @@ const Project = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="relative w-full p-5 bg-dark rounded-3xl overflow-hidden">
+                  <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                     <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
                       Tokenomics
                     </h4>
@@ -242,7 +240,7 @@ const Project = () => {
                         </li>
                       </ul>
                       <Image
-                        src="/images/Toshipad-Tokenomics.png"
+                        src="/images/Toshipad-Road-Map.png"
                         alt=""
                         width={500}
                         height={500}

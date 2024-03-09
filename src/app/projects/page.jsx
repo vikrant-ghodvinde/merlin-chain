@@ -10,7 +10,7 @@ const page = () => {
     <LandingWrapper>
       <section className="relative py-14">
         <Container>
-          <div className="relative w-full bg-dark p-20 max-md:p-5 rounded-3xl z-10">
+          <div className="relative w-full bg-light dark:bg-dark p-20 max-md:p-5 rounded-3xl z-10 transition-colors duration-300">
             <Image
               src="/images/dots.png"
               alt=""
@@ -27,7 +27,7 @@ const page = () => {
             />
             <div className="text-center">
               <h2 className="text-6xl max-md:text-4xl font-bold tracking-wide uppercase font-bebas-neue mb-6">
-                Discover Toshipad
+                Discover Merlin Pad
               </h2>
               <p className="mb-1.5">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,

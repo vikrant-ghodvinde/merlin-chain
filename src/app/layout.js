@@ -1,5 +1,6 @@
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+import Provider from "@/lib/ThemeProvider/Provider";
 
 const robotoCondensed = Roboto_Condensed({ subsets: ["latin"] });
 
@@ -11,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={robotoCondensed.className}>{children}</body>
+      <body className={robotoCondensed.className}>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }

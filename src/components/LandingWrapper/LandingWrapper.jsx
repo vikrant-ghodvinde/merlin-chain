@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const LandingWrapper = ({ children }) => {
   return (
-    <div className="relative w-full h-full min-h-lvh bg-black">
+    <div className="relative w-full h-full min-h-lvh bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <Navbar />
       {children}
       <Footer />

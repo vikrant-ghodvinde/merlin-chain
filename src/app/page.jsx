@@ -11,7 +11,7 @@ const Home = () => {
     <LandingWrapper>
       <section className="banner">
         <Container>
-          <div className="relative w-full py-14 flex flex-col items-center justify-center gap-y-7 text-center min-h-[calc(100vh-96px)]">
+          <div className="relative w-full py-14 flex flex-col items-center justify-center gap-y-7 text-center min-h-[calc(100vh-95px)]">
             <h1 className="text-7xl max-md:text-5xl font-bold uppercase tracking-wide font-bebas-neue">
               Incubating Future Merlin Projects
             </h1>
@@ -20,7 +20,7 @@ const Home = () => {
               href="/"
               target="_blank"
               rel="noreferrer"
-              className="relative inline-flex items-center gap-1 py-3 px-6 rounded-3xl text-white bg-purple-600 hover:bg-purple-700 transition-all duration-300"
+              className="button bg-primary-gradient z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:rounded-3xl before:bg-black before:opacity-0 hover:before:opacity-30 before:transition-all before:duration-300 before:-z-10"
             >
               Launch Your Project
             </Link>
@@ -29,7 +29,7 @@ const Home = () => {
                 href="https://twitter.com/MerlinElixir"
                 target="_blank"
                 rel="noReferrer"
-                className="w-12 h-12 rounded-full text-xs inline-flex items-center justify-center bg-dark hover:bg-purple-600 transition-all duration-300"
+                className="relative w-12 h-12 rounded-full text-xs inline-flex items-center justify-center bg-light dark:bg-dark overflow-hidden z-10 text-black dark:text-white hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"
               >
                 <X />
               </Link>
@@ -37,7 +37,7 @@ const Home = () => {
                 href="https://t.me/merlin_elixir"
                 target="_blank"
                 rel="noReferrer"
-                className="w-12 h-12 rounded-full text-xs inline-flex items-center justify-center bg-dark hover:bg-purple-600 transition-all duration-300"
+                className="relative w-12 h-12 rounded-full text-xs inline-flex items-center justify-center bg-light dark:bg-dark overflow-hidden z-10 text-black dark:text-white hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"
               >
                 <Telegram />
               </Link>
@@ -123,7 +123,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-12">
             <div className="relative col-span-6 max-lg:col-span-12 p-3 max-lg:px-0 max-lg:py-3">
-              <div className="relative w-full h-full p-5 bg-heavy-dark rounded-xl">
+              <div className="relative w-full h-full p-5 bg-light dark:bg-heavy-dark rounded-xl transition-colors duration-300">
                 <h4 className="text-2xl font-semibold mb-6">Builders</h4>
                 <ul className="list-disc ps-4 flex flex-col gap-5">
                   <li className="">
@@ -134,7 +134,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative col-span-6 max-lg:col-span-12 p-3 max-lg:px-0 max-lg:py-3">
-              <div className="relative w-full h-full p-5 bg-heavy-dark rounded-xl">
+              <div className="relative w-full h-full p-5 bg-light dark:bg-heavy-dark rounded-xl transition-colors duration-300">
                 <h4 className="text-2xl font-semibold mb-6">Users</h4>
                 <ul className="list-disc ps-4 flex flex-col gap-5">
                   <li className="">
@@ -207,7 +207,7 @@ const Home = () => {
               href="https://twitter.com/MerlinElixir"
               target="_blank"
               rel="noReferrer"
-              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-dark hover:bg-purple-600 transition-all duration-300"
+              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-light dark:bg-dark overflow-hidden z-10 hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"
             >
               <X /> <span className="text-sm">Twitter</span>
             </Link>
@@ -215,7 +215,7 @@ const Home = () => {
               href="https://t.me/merlin_elixir"
               target="_blank"
               rel="noReferrer"
-              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-dark hover:bg-purple-600 transition-all duration-300"
+              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-light dark:bg-dark overflow-hidden z-10 hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"
             >
               <Telegram /> <span className="text-sm">Telegram</span>
             </Link>
@@ -223,7 +223,7 @@ const Home = () => {
               href="https://t.me/merlin_elixir"
               target="_blank"
               rel="noReferrer"
-              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-dark hover:bg-purple-600 transition-all duration-300"
+              className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-light dark:bg-dark overflow-hidden z-10 hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"
             >
               <CardWallet /> <span className="text-sm">Buy</span>
             </Link>
