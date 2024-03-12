@@ -62,7 +62,7 @@ const Project = () => {
             <div className="relative col-span-4 max-lg:col-span-12">
               <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                 <div className="relative">
-                  <h4 className="text-lg font-bold font-bebas-neue tracking-wide">
+                  <h4 className="text-lg font-bold font-chakra-petch">
                     ELXR - PUBLIC SALE
                   </h4>
                   <p className="text-xs">ELXR - PUBLIC SALE</p>
@@ -72,8 +72,8 @@ const Project = () => {
                 </div>
                 <div className="relative my-3">
                   <div className="mb-1 flex items-center justify-between gap-2">
-                    <p className="text-sm font-bebas-neue">Progress</p>
-                    <p className="text-sm font-bebas-neue">0.00%</p>
+                    <p className="text-sm font-chakra-petch">Progress</p>
+                    <p className="text-sm font-chakra-petch">0.00%</p>
                   </div>
                   <div className="relative w-full h-1 bg-white dark:bg-black overflow-hidden rounded-xl transition-colors duration-300">
                     <div className="absolute h-full bg-primary-gradient transition-all duration-300" style={{width: `${progress}%`}}></div>
@@ -132,7 +132,7 @@ const Project = () => {
                 </div>
                 {tabType === "about" ? (
                   <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
-                    <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
+                    <h4 className="text-xl font-chakra-petch font-semibold text-semi-dark">
                       About Project
                     </h4>
                     <div className="relative">
@@ -171,7 +171,7 @@ const Project = () => {
                   </div>
                 ) : tabType === "roadMap" ? (
                   <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
-                    <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
+                    <h4 className="text-xl font-chakra-petch font-semibold text-semi-dark">
                       Roadmap: Future of the Project
                     </h4>
                     <div className="relative">
@@ -206,7 +206,7 @@ const Project = () => {
                   </div>
                 ) : (
                   <div className="relative w-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
-                    <h4 className="text-xl font-bebas-neue font-semibold tracking-wide text-semi-dark">
+                    <h4 className="text-xl font-chakra-petch font-semibold text-semi-dark">
                       Tokenomics
                     </h4>
                     <div className="relative">

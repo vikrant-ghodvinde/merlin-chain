@@ -12,12 +12,12 @@ const Home = () => {
       <section className="banner">
         <Container>
           <div className="relative w-full py-14 flex flex-col items-center justify-center gap-y-7 text-center min-h-[calc(100vh-95px)]">
-            <h1 className="text-7xl max-md:text-5xl font-bold uppercase tracking-wide font-bebas-neue">
+            <h1 className="text-7xl max-md:text-5xl font-bold uppercase font-chakra-petch">
               Incubating Future Merlin Projects
             </h1>
             <p>Elixir - A community driven open platform for Merlin chain</p>
             <Link
-              href="/"
+              href="https://forms.gle/FQbkAHY7GEXNDRWA8"
               target="_blank"
               rel="noreferrer"
               className="button bg-primary-gradient z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:rounded-3xl before:bg-black before:opacity-0 hover:before:opacity-30 before:transition-all before:duration-300 before:-z-10"
@@ -58,7 +58,7 @@ const Home = () => {
                 className="w-24 mb-8"
               />
               <div className="relative flex flex-col gap-3">
-                <p className="font-bebas-neue">Powered by</p>
+                <p className="font-chakra-petch">Powered by</p>
                 <h2 className="text-5xl max-md:text-4xl font-bold">
                   Elixir & The Grand Wizards
                 </h2>
@@ -71,7 +71,7 @@ const Home = () => {
                   transformative journey with us.
                 </p>
               </div>
-              <div className="relative mt-8">
+              {/* <div className="relative mt-8">
                 <Link
                   href="/"
                   target="_blank"
@@ -80,11 +80,11 @@ const Home = () => {
                 >
                   Meet The Council
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="relative col-span-6 max-lg:col-span-12">
               <Image
-                src="/images/council1.aaff44422fdc757cec23.png"
+                src="/images/image-1.jpg"
                 alt=""
                 width={500}
                 height={500}
@@ -97,7 +97,7 @@ const Home = () => {
       <section className="relative py-14">
         <Container>
           <div className="relative text-center mb-12">
-            <h2 className="text-5xl max-md:text-4xl font-bebas-neue">
+            <h2 className="text-5xl max-md:text-4xl font-chakra-petch">
               Upcoming Projects
             </h2>
           </div>
@@ -117,7 +117,7 @@ const Home = () => {
       <section className="relative py-14">
         <Container>
           <div className="relative text-center mb-12">
-            <h2 className="text-5xl max-md:text-4xl font-bebas-neue">
+            <h2 className="text-5xl max-md:text-4xl font-chakra-petch">
               How it Works
             </h2>
           </div>
@@ -176,7 +176,7 @@ const Home = () => {
                   projects within the Merlin ecosystem.
                 </p>
               </div>
-              <div className="relative mt-8">
+              {/* <div className="relative mt-8">
                 <Link
                   href="/"
                   target="_blank"
@@ -185,7 +185,7 @@ const Home = () => {
                 >
                   See More
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </Container>
@@ -193,7 +193,7 @@ const Home = () => {
       <section className="relative py-14">
         <Container>
           <div className="relative text-center mb-12">
-            <h2 className="text-5xl md:text-4xl font-bebas-neue">
+            <h2 className="text-5xl md:text-4xl font-chakra-petch">
               Join Our Community
             </h2>
             <p className="pt-5">
@@ -220,7 +220,7 @@ const Home = () => {
               <Telegram /> <span className="text-sm">Telegram</span>
             </Link>
             <Link
-              href="https://t.me/merlin_elixir"
+              href="https://dexscreener.com/merlinchain/0x6ad427c4df1055772ac0c3d58523776855478b31"
               target="_blank"
               rel="noReferrer"
               className="relative inline-flex items-center justify-center gap-1 py-3 px-6 text-xs rounded-3xl bg-light dark:bg-dark overflow-hidden z-10 hover:text-white transition-all duration-300 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300"

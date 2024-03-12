@@ -24,7 +24,7 @@ const UpcomingProjectCard = () => {
           />
         </div>
         <div className="relative">
-          <h4 className="text-lg font-bebas-neue font-semibold tracking-wide">
+          <h4 className="text-lg font-chakra-petch font-semibold">
             ELXR - Public Sale
           </h4>
           <div className="relative my-2">

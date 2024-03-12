@@ -26,7 +26,7 @@ const page = () => {
               className="absolute right-4 bottom-4 w-36 rotate-180 -z-10"
             />
             <div className="text-center">
-              <h2 className="text-6xl max-md:text-4xl font-bold tracking-wide uppercase font-bebas-neue mb-6">
+              <h2 className="text-6xl max-md:text-4xl font-bold uppercase font-chakra-petch mb-6">
                 Discover Merlin Pad
               </h2>
               <p className="mb-1.5">
@@ -47,7 +47,7 @@ const page = () => {
       <section className="relative py-14">
         <Container>
           <div className="relative text-center mb-12">
-            <h2 className="text-5xl max-md:text-4xl font-bebas-neue">Upcoming Projects</h2>
+            <h2 className="text-5xl max-md:text-4xl font-chakra-petch">Upcoming Projects</h2>
           </div>
           <div className="grid grid-cols-12 items-center gap-x-8 max-md:gap-x-0 max-md:gap-y-8">
             <div className="relative col-span-4 max-md:col-span-12">

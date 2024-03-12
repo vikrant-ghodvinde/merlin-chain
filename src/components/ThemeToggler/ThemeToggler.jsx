@@ -18,10 +18,7 @@ const ThemeToggler = () => {
     <button
       type="button"
       className="w-10 h-10 rounded-full text-xs inline-flex items-center justify-center text-black dark:text-white hover:text-purple-600 transition-all duration-300"
-      onClick={() => {
-        setTheme(theme === "dark" ? "light" : "dark");
-        console.log(theme);
-      }}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
         <HalfMoon strokeWidth={2} />

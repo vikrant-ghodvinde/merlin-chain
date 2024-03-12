@@ -25,7 +25,7 @@ module.exports = {
         light: "#f8f9fa",
       },
       fontFamily: {
-        "bebas-neue": ["Bebas Neue", "sans-serif"],
+        "chakra-petch": ["Chakra Petch", "sans-serif"],
       },
     },
   },

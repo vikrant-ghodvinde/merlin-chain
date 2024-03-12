@@ -3,7 +3,6 @@ import Container from "../Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { Telegram, X } from "iconoir-react";
-import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 const Footer = () => {
   return (
@@ -59,7 +58,6 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex items-center flex-wrap gap-2">
-              <ThemeToggler />
               <p className="text-sm">
                 &copy; {new Date().getFullYear()} MerlinPad
               </p>
