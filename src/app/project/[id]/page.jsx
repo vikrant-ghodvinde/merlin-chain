@@ -28,7 +28,7 @@ const Project = () => {
               <div className="flex gap-4">
                 <div className="relative w-16 min-w-16 h-16 max-lg:w-12 max-lg:min-w-12 max-lg:h-12 rounded-full bg-light dark:bg-dark overflow-hidden transition-colors duration-300">
                   <Image
-                    src="/images/10n8-banner.png"
+                    src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
                     alt=""
                     width={100}
                     height={100}
@@ -51,7 +51,7 @@ const Project = () => {
             <div className="relative col-span-8 max-lg:col-span-12">
               <div className="relative w-full min-w-72 h-full p-5 bg-light dark:bg-dark rounded-3xl overflow-hidden transition-colors duration-300">
                 <Image
-                  src="/images/10n8-banner.png"
+                  src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
                   alt=""
                   width={500}
                   height={500}
@@ -145,11 +145,11 @@ const Project = () => {
                         become a Bitcoiner through the little dragon lore.
                       </p>
                       <Image
-                        src="/images/01.png"
+                        src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
                         alt=""
                         width={500}
                         height={500}
-                        className="w-full mb-3"
+                        className="w-full max-h-80 object-cover mb-3"
                       />
                       <p className="mb-3">
                         Now, how do they exactly turn this vision into reality?
@@ -196,7 +196,7 @@ const Project = () => {
                         infrastructure to the Ordinals space.
                       </p>
                       <Image
-                        src="/images/Toshipad-Tokenomics.png"
+                        src="/images/merlin-Tokenomics.png"
                         alt=""
                         width={500}
                         height={500}
@@ -240,7 +240,7 @@ const Project = () => {
                         </li>
                       </ul>
                       <Image
-                        src="/images/Toshipad-Road-Map.png"
+                        src="/images/merlin-Road-Map.png"
                         alt=""
                         width={500}
                         height={500}

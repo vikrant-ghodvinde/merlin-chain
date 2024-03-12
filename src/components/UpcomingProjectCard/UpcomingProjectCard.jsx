@@ -9,14 +9,14 @@ const UpcomingProjectCard = () => {
       <div className="relative p-4">
         <div className="relative w-full h-44 mb-14">
           <Image
-            src="/images/10n8-banner.png"
+            src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
             alt=""
             sizes="100%"
             fill
             className="w-full h-full object-cover rounded-xl"
           />
           <Image
-            src="/images/10n8-banner.png"
+            src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
             alt=""
             width={100}
             height={100}

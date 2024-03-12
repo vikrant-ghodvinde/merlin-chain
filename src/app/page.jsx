@@ -156,7 +156,7 @@ const Home = () => {
           <div className="grid grid-cols-12 items-center gap-x-10 max-lg:gap-x-0 max-xl:gap-y-10">
             <div className="relative col-span-6 max-lg:col-span-12">
               <Image
-                src="/images/council1.aaff44422fdc757cec23.png"
+                src="/images/wizard-image.png"
                 alt=""
                 width={500}
                 height={500}
