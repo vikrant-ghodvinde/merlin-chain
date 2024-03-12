@@ -77,14 +77,6 @@ const Navbar = () => {
                   Docs
                 </Link>
               </li>
-              <li className="block">
-                <Link
-                  href="/"
-                  className="block text-black dark:text-white hover:text-purple-500 transition-all duration-300"
-                >
-                  Blogs
-                </Link>
-              </li>
               <li className="hidden max-lg:block">
                 <ConnectButton />
               </li>
