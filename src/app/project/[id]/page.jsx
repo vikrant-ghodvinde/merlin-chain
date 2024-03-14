@@ -3,6 +3,7 @@ import Container from "@/components/Container/Container";
 import LandingWrapper from "@/components/LandingWrapper/LandingWrapper";
 import TimeCounter from "@/components/TimeCounter/TimeCounter";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Project = () => {
@@ -15,10 +16,10 @@ const Project = () => {
           <div className="text-sm breadcrumbs mb-5">
             <ul>
               <li>
-                <a>Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a>Launchpad</a>
+                <Link href="/projects">Launchpad</Link>
               </li>
               <li>ELXR - Public Sale</li>
             </ul>
@@ -40,10 +41,12 @@ const Project = () => {
                     ELXR - Public Sale
                   </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Reiciendis nobis vitae provident ipsam, unde enim animi
-                    consequuntur error et id porro aspernatur accusantium vero,
-                    delectus minima. Ullam non laborum ex?
+                    Join our visionary collective at the forefront of the Merlin
+                    Chain. Comprised of seasoned founders, strategists,
+                    managers, influencers, and networkers, our team boasts a
+                    wealth of experience. Backed by renowned advisors and
+                    partners within the web3 sphere, we invite you to embark on
+                    this transformative journey with us.
                   </p>
                 </div>
               </div>
@@ -76,7 +79,10 @@ const Project = () => {
                     <p className="text-sm font-chakra-petch">0.00%</p>
                   </div>
                   <div className="relative w-full h-1 bg-white dark:bg-black overflow-hidden rounded-xl transition-colors duration-300">
-                    <div className="absolute h-full bg-primary-gradient transition-all duration-300" style={{width: `${progress}%`}}></div>
+                    <div
+                      className="absolute h-full bg-primary-gradient transition-all duration-300"
+                      style={{ width: `${progress}%` }}
+                    ></div>
                   </div>
                 </div>
                 <ul className="flex flex-col gap-y-2 my-4">
@@ -137,36 +143,23 @@ const Project = () => {
                     </h4>
                     <div className="relative">
                       <h3 className="text-2xl font-bold my-5">About:</h3>
-                      <p className="mb-3">
-                        Their ultimate mission is to bring Bitcoin to every
-                        household on the wings of the Little dragon—a conduit
-                        and a medium that taps into every teenager&apos;s
-                        computer and phone. They aim to raise every kid to
-                        become a Bitcoiner through the little dragon lore.
+                      <p className="mb-3 last:mb-0">
+                        Founded by a team of seasoned veterans and visionary
+                        enthusiasts, Elixir represents the culmination of our
+                        shared passion for decentralized finance and blockchain
+                        technology. Our journey began with the vision of
+                        creating a platform that not only provides unparalleled
+                        opportunities for project incubation but also fosters a
+                        vibrant and engaged community of like-minded
+                        individuals.
                       </p>
                       <Image
                         src="/images/_6382985d-ba66-4567-9591-760c3b9826db.jpeg"
                         alt=""
                         width={500}
                         height={500}
-                        className="w-full max-h-80 object-cover mb-3"
+                        className="w-full max-h-80 object-cover mb-3 last:mb-0"
                       />
-                      <p className="mb-3">
-                        Now, how do they exactly turn this vision into reality?
-                        They are going to do this in three ways:
-                      </p>
-                      <ul className="mb-3 flex flex-col gap-y-2 list-disc ps-7">
-                        <li>
-                          Financial Literacy via DeFi built on dragon lore.
-                        </li>
-                        <li>
-                          Entertainment via gaming through the dragon lore.
-                        </li>
-                        <li>
-                          Immersive experience through the little dragon
-                          Metaverse.
-                        </li>
-                      </ul>
                     </div>
                   </div>
                 ) : tabType === "roadMap" ? (
@@ -178,30 +171,35 @@ const Project = () => {
                       <h3 className="text-2xl font-bold my-5">
                         Roadmap: Future of the Project
                       </h3>
-                      <p className="mb-3">
-                        Due to The Council Ecosystem’s spiral value mechanics,
-                        the value to Builders of launching through Merlin Pad
-                        will continue to increase. As the market cap of TSHX
-                        increases, so does the incentive to launch through
-                        Merlin Pad. This creates a continuously expanding market
-                        advantage for Merlin Pad. In addition, we offer full
-                        service incubation including strategy, marketing,
-                        connectivity, legal, and funding, as well as a full
-                        ecosystem of waiting users. We anticipate accumulating a
-                        dominant share of the Ordinals launchpad market prior to
-                        the upcoming bullrun. Our core ethic however is not
-                        competitive, it is collaborative. Our mission is to
-                        bring more attention, capital, and cross-web3-Builders
-                        into Ordinals by providing professional tier tools and
-                        infrastructure to the Ordinals space.
+                      <ul className="mb-3 last:mb-0 flex flex-col gap-y-2 list-disc ps-7">
+                        <li>
+                          Decentralized Launchpad: Our primary goal is to
+                          develop a decentralized launchpad on Merlin Chain,
+                          empowering anyone to launch a token and access the
+                          benefits of blockchain technology.
+                        </li>
+                        <li>
+                          Staking Platform for $ELXR: We&apos;re committed to
+                          building a robust staking platform for the $ELXR
+                          token, allowing holders to stake their tokens and earn
+                          rewards while contributing to the stability and
+                          security of the network.
+                        </li>
+                        <li>
+                          Revenue Sharing: As part of our commitment to
+                          community empowerment, we aim to implement
+                          revenue-sharing mechanisms, ensuring that our
+                          community members have a stake in the success of the
+                          platform and are rewarded for their contributions.
+                        </li>
+                      </ul>
+                      <p className="mb-3 last:mb-0">
+                        This roadmap outlines our vision for Elixir and
+                        highlights our commitment to building a vibrant and
+                        sustainable ecosystem on Merlin Chain. Stay tuned for
+                        updates as we work towards these milestones!
+                        #Elixir #Roadmap #BlockchainInnovation
                       </p>
-                      <Image
-                        src="/images/merlin-Tokenomics.png"
-                        alt=""
-                        width={500}
-                        height={500}
-                        className="w-full max-w-[80%] max-sm:max-w-full mx-auto"
-                      />
                     </div>
                   </div>
                 ) : (
@@ -210,42 +208,16 @@ const Project = () => {
                       Tokenomics
                     </h4>
                     <div className="relative">
-                      <h3 className="text-2xl font-bold my-5">Tokenomics</h3>
-                      <ul className="mb-4 flex flex-col gap-y-2 list-disc ps-7 text-sm">
-                        <li>
-                          5 % - Community Treasury: Tokens reserved for use by
-                          future community DAO. May also be used to invest in
-                          the community.
-                        </li>
-                        <li>
-                          5 % - Public Sale: Available tokens for public sale to
-                          join the ecosystem.
-                        </li>
-                        <li>
-                          5 % - Team Growth Fund: Tokens available for talent
-                          acquisition and growth.
-                        </li>
-                        <li>
-                          15 % - Liquidity Provisions: Liquidity to ensure
-                          stability and viability of the ecosystem
-                        </li>
-                        <li>
-                          20 % - Ecosystem Rewards: Given back to the ecosystem
-                          as rewards.
-                        </li>
-                        <li>
-                          50 % - Ecosystem Growth: Tokens held for ecosystem
-                          growth including developer grants, partnerships, and
-                          shared value flows.
-                        </li>
+                      <h3 className="text-2xl font-bold my-5">
+                        $ELXR TOKENOMICS
+                      </h3>
+                      <ul className="mb-3 last:mb-0 flex flex-col gap-y-2 list-disc ps-7 text-sm">
+                        <li>Total Supply - 21,000,000</li>
+                        <li>65% - Liquidity Pool (Locked & Burned)</li>
+                        <li>10% - Development</li>
+                        <li>5% - Airdrop</li>
+                        <li>20% - Presale</li>
                       </ul>
-                      <Image
-                        src="/images/merlin-Road-Map.png"
-                        alt=""
-                        width={500}
-                        height={500}
-                        className="w-full max-w-[80%] max-sm:max-w-full mx-auto"
-                      />
                     </div>
                   </div>
                 )}

@@ -103,6 +103,39 @@ body {
   color: #fff !important;
 }
 
+[data-rk] .ju367v8b {
+  /* padding-top: 0 !important; */
+}
+[data-rk] .ju367v6k {
+  /* padding-bottom: 0 !important; */
+}
+
+[data-testid] {
+  color: #000 !important;
+}
+
+[data-testid] .ju367v8a {
+  padding: 6px 4px !important;
+  color: #000 !important;
+  font-weight: normal !important;
+}
+
+[data-testid] .ju367v9i {
+  background: #9333ea !important;
+  color: #fff !important;
+}
+
+[data-testid="rk-account-button"] .ju367v8a {
+  color: #fff !important;
+  padding: 0 !important;
+}
+
+[data-testid="rk-chain-button"] .ju367v8b,
+[data-testid="rk-account-button"] .ju367v6k {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 /* CHECKBOX */
 .custom-checkbox {
   border-color: #fff;
@@ -127,4 +160,14 @@ body {
 .tab.tab-active:not(.tab-disabled):not([disabled]),
 .tab:is(input:checked) {
   @apply text-black dark:text-white border-black dark:border-white;
+}
+
+/* INPUT FILE */
+.file-input {
+  @apply bg-transparent border-white
+}
+
+/* INPUT CHECK */
+.toggle-primary:checked, .toggle-primary[checked="true"], .toggle-primary[aria-checked="true"] {
+  background-color: var(--fallback,#9333ea);
 }

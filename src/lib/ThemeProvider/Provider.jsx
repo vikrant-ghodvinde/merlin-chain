@@ -12,19 +12,12 @@ import {
   ledgerWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import {
-  arbitrum,
-  base,
-  mainnet,
-  optimism,
-  polygon,
-  sepolia,
-  zora,
+  mainnet
 } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider } from "wagmi";
-
+import {Merlin} from '../../static/Chain'
 const { wallets } = getDefaultWallets();
-
 const config = getDefaultConfig({
   appName: "RainbowKit demo",
   projectId: "bdc3a0c258d857699468c4397c52afaf",
@@ -35,7 +28,7 @@ const config = getDefaultConfig({
       wallets: [argentWallet, trustWallet, ledgerWallet],
     },
   ],
-  chains: [mainnet, polygon, optimism, arbitrum, base, zora],
+  chains: [mainnet, Merlin],
   ssr: true,
 });
 
